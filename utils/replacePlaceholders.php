@@ -12,8 +12,11 @@ define("LOGIN_TITLE", $titles["login"]);
 define("REGISTER_TITLE", $titles["register"]);
 define("LOGOUT_TITLE", $titles["logout"]);
 
-//BACKGROUNDS
+//INDEX BACKGROUNDS
 $indexBG = $json["index_background"];
 $bgCount = count((array)$indexBG);
 rand(1, $bgCount); 
 define("INDEX_BACKGROUND", $indexBG[array_rand($indexBG, 1)]);
+
+//LOGIN BACKGROUND
+define("LOGIN_BACKGROUND", $json["login_background"]);

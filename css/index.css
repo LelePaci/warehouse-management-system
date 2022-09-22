@@ -4,10 +4,11 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
-.nav{
+
+.nav {
     min-height: 30px;
     background-color: aliceblue;
-    padding: 10px 15px;
+    padding: 15px 35px;
     position: fixed;
     top: 0;
     left: 0;
@@ -18,22 +19,18 @@ body {
     flex-wrap: nowrap;
 }
 
-#auth-box{
-    display: flex;
-    flex-wrap: nowrap;
-}
-.auth{
+.auth {
     background-color: rgb(0, 38, 255);
     border-radius: 11px;
-    padding: 10px 20px;
-    color:white;
+    padding: 10px 30px;
+    color: white;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     margin: 0 2.5px 0;
 }
 
-#name{
+#name {
     color: black;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
@@ -41,13 +38,15 @@ body {
     display: block;
     float: left;
     font-size: xx-large;
+    letter-spacing: -1.5px;
 }
 
 @media (max-width: 500px) {
     #auth-box {
-      flex-direction: column;
+        flex-direction: column;
     }
-    .auth{
+
+    .auth {
         margin: 2.5px 0;
     }
-  }
+}
