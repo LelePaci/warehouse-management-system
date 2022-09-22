@@ -13,10 +13,14 @@ require_once 'utils/replacePlaceholders.php';
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body>
+<body background="images/<?php echo INDEX_BACKGROUND; ?>">
     <div class="nav">
-        <a href="auth/login.php" id="login" class="auth"> LOGIN</a>
-        <a href="auth/register.php" id="register" class="auth"> REGISTER</a>
+        <a href="#" id="name"> <?php echo WAREHOUSE_NAME; ?> </a>
+        <div id="auth-box">
+            <a href="auth/login.php" id="login" class="auth"> LOGIN</a>
+            <a href="auth/register.php" id="register" class="auth"> REGISTER</a>
+        </div>
+
     </div>
 </body>
 

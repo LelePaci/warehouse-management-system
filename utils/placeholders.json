@@ -4,5 +4,11 @@
         "login": "Warehouse - Login",
         "register": "Warehouse - Register",
         "logout": "Warehouse - Logout"
+    },
+    "warehouse_name": "Warehouse Management System",
+    "index_background": {
+        "bg1": "WMS_background.1.jpg",
+        "bg2": "WMS_background.2.jpg",
+        "bg3": "WMS_background.3.jpg"
     }
 }
