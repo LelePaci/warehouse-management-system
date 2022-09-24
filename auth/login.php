@@ -1,7 +1,6 @@
 <?php
-require_once '../utils/replacePlaceholders.php';
-require_once '../utils/database/dbConnection.php';
-require_once '../utils/commons.php';
+require_once '../commons/replacePlaceholders.php';
+require_once '../commons/database/dbConnection.php';
 session_start();
 if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
     header('location: ../main');
