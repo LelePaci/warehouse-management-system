@@ -1,5 +1,5 @@
 <?php
-require_once 'utils/replacePlaceholders.php';
+require_once 'commons/replacePlaceholders.php';
 ?>
 
 <!DOCTYPE html>
