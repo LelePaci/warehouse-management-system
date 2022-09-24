@@ -3,7 +3,7 @@ require_once '../utils/replacePlaceholders.php';
 require_once '../utils/dbConnection.php';
 session_start();
 if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
-    header('location: ../main.php');
+    header('location: ../main');
 }
 ?>
 
@@ -15,8 +15,8 @@ if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo LOGIN_TITLE; ?></title>
-    <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/login.css">    
     <script src="../js/validate.js"></script>
 </head>
 
@@ -34,7 +34,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
                 <img src="../images/show_password.png" alt="show/hide password" id="show-password">
             </fieldset>
             <input type="submit" value="Log in" class="btn btn-primary">
-            <a href="../index.php" class="btn btn-secondary">Annulla</a>
+            <a href="../index" class="btn btn-secondary">Annulla</a>
 
             <?php
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -53,13 +53,15 @@ if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
                                 if (password_verify($password, $psw)) {
                                     $_SESSION['email'] = $email;
                                     $_SESSION['password'] = $password;
-                                    header('location: ../main.php');
+                                    header('location: ../main');
                                 } else {
                                     echo '<p class="error">ATTENZIONE: Credenziali errate </p>';
                                 }
                             } else {
                                 echo '<p class="error">ATTENZIONE: Credenziali errate </p>';
                             }
+                        } else {
+                            echo '<p class="error">Errore</p>';
                         }
                     } else {
                         echo '<p class="error">Errore</p>';
