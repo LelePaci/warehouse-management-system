@@ -1,6 +1,7 @@
 <?php
 require_once '../utils/replacePlaceholders.php';
-require_once '../utils/dbConnection.php';
+require_once '../utils/database/dbConnection.php';
+require_once '../utils/commons.php';
 session_start();
 if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
     header('location: ../main');
@@ -20,7 +21,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
     <script src="../js/validate.js"></script>
 </head>
 
-<body background="../images/<?php echo LOGIN_BACKGROUND; ?>">
+<body background="../images/<?php echo STATIC_BACKGROUND; ?>">
     <div class="container">
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <h1>Accedi</h1>

@@ -12,11 +12,11 @@ define("LOGIN_TITLE", $titles["login"]);
 define("REGISTER_TITLE", $titles["register"]);
 define("LOGOUT_TITLE", $titles["logout"]);
 
-//INDEX BACKGROUNDS
-$indexBG = $json["index_background"];
+//CAROUSEL BACKGROUNDS
+$indexBG = $json["carousel_background"];
 $bgCount = count((array)$indexBG);
 rand(1, $bgCount); 
-define("INDEX_BACKGROUND", $indexBG[array_rand($indexBG, 1)]);
+define("CAROUSEL_BACKGROUND", $indexBG[array_rand($indexBG, 1)]);
 
-//LOGIN BACKGROUND
-define("LOGIN_BACKGROUND", $json["login_background"]);
+//STATIC BACKGROUND
+define("STATIC_BACKGROUND", $json["static_background"]);

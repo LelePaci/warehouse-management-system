@@ -14,7 +14,7 @@ require_once 'utils/replacePlaceholders.php';
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body background="images/<?php echo INDEX_BACKGROUND; ?>">
+<body background="images/<?php echo CAROUSEL_BACKGROUND; ?>">
     <div class="nav">
         <a href="#" id="name"> <?php echo WAREHOUSE_NAME; ?> </a>
         <a href="auth/login" id="login" class="auth"> Login </a>
