@@ -29,6 +29,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    /* max-height: 50px; */
 }
 
 .auth {
@@ -53,12 +54,3 @@ body {
     letter-spacing: -1.5px;
 }
 
-@media (max-width: 500px) {
-    #auth-box {
-        flex-direction: column;
-    }
-
-    .auth {
-        margin: 2.5px 0;
-    }
-}

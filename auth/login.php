@@ -31,7 +31,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
             <fieldset>
                 <legend>Password</legend>
                 <input type="password" name="password" id="password" placeholder="Inserisci la tua password" required>
-                <img src="../images/show_password.png" alt="show/hide password" id="show-password">
+                <img src="../images/icons/show_password.png" alt="show/hide password" id="show-password">
             </fieldset>
             <input type="submit" value="Log in" class="btn btn-primary">
             <a href="../index" class="btn btn-secondary">Annulla</a>

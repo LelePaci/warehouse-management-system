@@ -8,9 +8,9 @@ function showHidePassword() {
     var field = document.getElementById('password');
     if(field.type == 'password'){
         field.type = 'text';
-        showHideButton.src = "../images/hide_password.png";
+        showHideButton.src = "../res/icons/hide_password.png";
     } else {
         field.type = 'password';
-        showHideButton.src = "../images/show_password.png";
+        showHideButton.src = "../res/icons/show_password.png";
     }  
 }

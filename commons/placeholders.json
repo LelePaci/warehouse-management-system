@@ -7,9 +7,9 @@
     },
     "warehouse_name": "Warehouse Management System",
     "carousel_background": {
-        "bg1": "guillaume-bolduc-uBe2mknURG4-unsplash.jpg",
-        "bg2": "reproductive-health-supplies-coalition-2RraPpR-6Tc-unsplash.jpg",
-        "bg3": "timelab-pro-CfKV0CecnU8-unsplash.jpg"
+        "bg1": "backgrounds/guillaume-bolduc-uBe2mknURG4-unsplash.jpg",
+        "bg2": "backgrounds/reproductive-health-supplies-coalition-2RraPpR-6Tc-unsplash.jpg",
+        "bg3": "backgrounds/timelab-pro-CfKV0CecnU8-unsplash.jpg"
     },
-    "static_background": "milad-fakurian-E8Ufcyxz514-unsplash.jpg"
+    "static_background": "backgrounds/milad-fakurian-E8Ufcyxz514-unsplash.jpg"
 }
