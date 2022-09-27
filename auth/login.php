@@ -20,7 +20,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
     <script src="../js/validate.js"></script>
 </head>
 
-<body background="../images/<?php echo STATIC_BACKGROUND; ?>">
+<body background="../res/<?php echo STATIC_BACKGROUND; ?>">
     <div class="container">
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <h1>Accedi</h1>
@@ -31,7 +31,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
             <fieldset>
                 <legend>Password</legend>
                 <input type="password" name="password" id="password" placeholder="Inserisci la tua password" required>
-                <img src="../images/icons/show_password.png" alt="show/hide password" id="show-password">
+                <img src="../res/icons/show_password.png" alt="show/hide password" id="show-password" onclick="showHidePassword()">
             </fieldset>
             <input type="submit" value="Log in" class="btn btn-primary">
             <a href="../index" class="btn btn-secondary">Annulla</a>

@@ -22,22 +22,46 @@ $user = fetchUser($link, $_SESSION);
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
 </head>
 
-<body background="images/<?php echo STATIC_BACKGROUND; ?>">
+<body background="res/<?php echo STATIC_BACKGROUND; ?>">
     <div class="nav">
         <a href="#" id="name">
-            <?php 
-                if ($user->gender == 0){
-                    echo 'Benvenuto ';
-                } else {
-                    echo 'Benvenuta ';
-                }
+            <?php
+            if ($user->gender == 0) {
+                echo 'Benvenuto ';
+            } else {
+                echo 'Benvenuta ';
+            }
             echo $user->firstName;
             ?>
         </a>
+        <ul>
+            <li>
+                <a href="#" onclick="showPage('employees')">Dipendenti</a>
+            </li>
+            <li>
+                <a href="#" onclick="showPage('products')">Prodotti</a>
+            </li>
+            <li>
+                <a href="#" onclick="showPage('profile')">Profilo</a>
+            </li>
+        </ul>
         <a href="auth/logout" class="auth"> Logout </a>
     </div>
+    <div class="container">
+        <div class="pages" id="employees">
+            
+        </div>
+        <div class="pages" id="products">
+            
+        </div>
+        <div class="pages" id="profile">
+            
+        </div>
+    </div>
+
 </body>
 
 </html>
