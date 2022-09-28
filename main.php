@@ -38,27 +38,21 @@ $user = fetchUser($link, $_SESSION);
             ?>
         </a>
         <ul>
-            <li>
-                <a href="#" onclick="showPage('employees')">Dipendenti</a>
-            </li>
-            <li>
-                <a href="#" onclick="showPage('products')">Prodotti</a>
-            </li>
-            <li>
-                <a href="#" onclick="showPage('profile')">Profilo</a>
-            </li>
+            <li onclick="showPage('employees')"> Dipendenti </li>
+            <li onclick="showPage('products')"> Prodotti </li>
+            <li onclick="showPage('profile')"> Profilo </li>
         </ul>
         <a href="auth/logout" class="auth"> Logout </a>
     </div>
     <div class="container">
         <div class="pages" id="employees">
-            
+            <?php require('pages/employees.php'); ?>
         </div>
         <div class="pages" id="products">
-            
+            <?php require('pages/products.php'); ?>
         </div>
         <div class="pages" id="profile">
-            
+            <?php require('pages/profile.php'); ?>
         </div>
     </div>
 
